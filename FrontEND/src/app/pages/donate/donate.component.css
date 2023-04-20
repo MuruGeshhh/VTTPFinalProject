@@ -1,0 +1,22 @@
+html{
+    padding: 0;
+    height: 100%;
+}
+body{
+    margin-top: 63px;
+    height: 100%;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('https://previews.123rf.com/images/marisha5/marisha51010/marisha5101000057/8009927-frame-made-of-money-isolated-on-white-background.jpg')no-repeat;
+    
+    background-position: center;
+    background-size: cover;
+}

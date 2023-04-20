@@ -1,0 +1,18 @@
+package com.mini.backend.backEND.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mini.backend.backEND.model.Comment;
+import com.mini.backend.backEND.model.Post;
+import com.mini.backend.backEND.model.User;
+
+import java.util.List;
+
+@Repository
+public interface CommentRepository extends JpaRepository<Comment, Long> {
+    List<Comment> findByPost(Post post);
+
+    List<Comment> findAllByUser(User user);
+}
