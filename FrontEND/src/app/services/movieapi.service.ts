@@ -9,7 +9,7 @@ export class MovieapiService {
 
   constructor(private http: HttpClient) { }
 
-  baseurl = "https://typical-cat-production.up.railway.app/";
+  baseurl = "https://api.themoviedb.org/3";
   apikey = "${Api_Key}}"; //mask this
   
 
