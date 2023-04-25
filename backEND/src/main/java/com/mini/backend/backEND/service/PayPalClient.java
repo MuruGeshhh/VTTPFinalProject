@@ -47,10 +47,7 @@ public Map<String, Object> createPayment(String sum){
     payment.setPayer(payer);
     payment.setTransactions(transactions);
 
-    RedirectUrls redirectUrls = new RedirectUrls();
-    redirectUrls.setCancelUrl("http://localhost:4200/cancel");
-    redirectUrls.setReturnUrl("http://localhost:4200/");
-    payment.setRedirectUrls(redirectUrls);
+
     Payment createdPayment;
     try {
         String redirectUrl = "";
